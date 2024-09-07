@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>犬の食事管理</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐾 犬の食事管理 🐕</h1>
+        </header>
+
+        <section class="meal-section">
+            <h2>食事を追加</h2>
+            <form id="meal-form">
+                <div class="form-group">
+                    <label for="meal">食材名:</label>
+                    <input type="text" id="meal" placeholder="食材名を入力" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">量 (グラム):</label>
+                    <input type="number" id="quantity" placeholder="量 (g) を入力" required>
+                </div>
+
+                <button type="submit" class="btn">食事を追加</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2>今日の食事</h2>
+            <ul id="meal-list"></ul>
+
+            <h2>栄養情報</h2>
+            <div id="nutrition-info"></div>
+
+            <div id="comparison-info"></div>
+            <div id="recommendation-info"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
